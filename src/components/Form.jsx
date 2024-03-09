@@ -47,7 +47,7 @@ function Form() {
     if (validateForm()) {
       try 
       {
-        const response =  axios.post('http://localhost:8800/postcontact/', formData);
+        const response = axios.post('http://localhost:8800/postcontact/', formData);
         console.log('Form submitted:', response.data);
         // Assuming the form submission was successful, you can handle it here
         alert('Message sent successfully');
